@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Intending" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDg-gP-UJi">
+                                <rect key="frame" x="170.5" y="367" width="34" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfn-PL-Mx1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuY-7D-d0z">
+                                <rect key="frame" x="164" y="317" width="47" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqZ-n6-mcn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-NW-Vs3">
+                                <rect key="frame" x="172.5" y="267" width="30" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVM-lP-ghV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kke-Dp-NGF">
+                                <rect key="frame" x="122.5" y="689" width="130" height="4"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="IrY-4e-3cI"/>
+                                    <constraint firstAttribute="height" constant="4" id="m5z-ye-hXU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kke-Dp-NGF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="22" id="20M-Yp-vmP"/>
+                            <constraint firstItem="bDg-gP-UJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5zp-9R-HMf"/>
+                            <constraint firstItem="SWY-NW-Vs3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZHV-zk-I2B"/>
+                            <constraint firstItem="bDg-gP-UJi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="e62-0E-psI"/>
+                            <constraint firstItem="SWY-NW-Vs3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="ioL-OJ-5XA"/>
+                            <constraint firstItem="Kke-Dp-NGF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sra-0J-f3A"/>
+                            <constraint firstItem="nuY-7D-d0z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNx-1G-hcb"/>
+                            <constraint firstItem="nuY-7D-d0z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zPv-4Z-VQy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="blueButton" destination="bDg-gP-UJi" id="kXn-zk-unX"/>
+                        <outlet property="greenButton" destination="nuY-7D-d0z" id="4Lt-4b-Txd"/>
+                        <outlet property="redButton" destination="SWY-NW-Vs3" id="rK7-t7-NBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
