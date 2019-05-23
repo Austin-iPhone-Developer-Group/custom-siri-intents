@@ -12,8 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func refreshColor() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             let viewController = self.window!.rootViewController!
-            if let
-            = UserDefaults(suiteName: "group.com.intenting")?.string(forKey: "color") {
+            if let colorString = UserDefaults(suiteName: "group.com.intenting")?.string(forKey: "color") {
                 viewController.view.backgroundColor = ViewController.Color(string: colorString).uiColor
             }
             self.refreshColor()
