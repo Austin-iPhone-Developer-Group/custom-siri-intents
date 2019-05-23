@@ -1,1 +1,1 @@
-Hacky implementation of custom Siri intents to demo them for the November 2018 iPhone developer group meeting.
+Fork from a simple demo of custom Siri intents. Ask Siri to change the app background color.
